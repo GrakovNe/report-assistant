@@ -1,0 +1,46 @@
+plugins {
+    id "idea"
+    id "org.jetbrains.kotlin.jvm" version "1.3.72"
+    id "org.jetbrains.kotlin.plugin.spring" version "1.3.72"
+    id "org.jetbrains.kotlin.plugin.jpa" version "1.3.72"
+    id "org.springframework.boot" version "2.3.0.RELEASE"
+    id "io.spring.dependency-management" version "1.0.9.RELEASE"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation ('org.springframework.boot:spring-boot-starter-web')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+allOpen {
+    annotation("javax.persistence.Entity")
+    annotation("javax.persistence.Embeddable")
+    annotation("javax.persistence.MappedSuperclass")
+}
+
+
+group 'eco.omsk'
+version '0.1'
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
