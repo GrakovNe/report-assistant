@@ -1,4 +1,4 @@
-package eco.omsk.report.assistant.domain.entities.auth
+package eco.omsk.report.assistant.domain.entity.auth
 
 import javax.persistence.Entity
 

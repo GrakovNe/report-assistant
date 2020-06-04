@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/report_assistant
     username: report_assistant
-    passwor: report_assistant
-    jpa:
-      hibernate:
-        ddl-auto: create-drop
+    password: report_assistant
+  jpa:
+    hibernate:
+      ddl-auto: create

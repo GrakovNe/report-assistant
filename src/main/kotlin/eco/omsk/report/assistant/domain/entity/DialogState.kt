@@ -1,4 +1,4 @@
-package eco.omsk.report.assistant.domain.entities
+package eco.omsk.report.assistant.domain.entity
 
 enum class DialogState {
     UNKNOWN,

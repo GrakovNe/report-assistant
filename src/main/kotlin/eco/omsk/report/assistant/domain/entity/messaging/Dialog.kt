@@ -1,7 +1,7 @@
-package eco.omsk.report.assistant.domain.entities.messaging
+package eco.omsk.report.assistant.domain.entity.messaging
 
-import eco.omsk.report.assistant.domain.entities.BaseEntity
-import eco.omsk.report.assistant.domain.entities.DialogState
+import eco.omsk.report.assistant.domain.entity.BaseEntity
+import eco.omsk.report.assistant.domain.entity.DialogState
 import javax.persistence.Entity
 import javax.persistence.OneToMany
 
